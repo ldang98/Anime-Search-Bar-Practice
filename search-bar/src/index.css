@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, #5c728a, white);
+  height: 100vh;
+}
+
+.container {
+  max-height: 800px;
+  /* max-width: 300px; */
+
+  margin: 2rem auto;
+  overflow: auto;
+  /* display: flex; */
+  justify-content: center;
+  background-color: lightslategray;
+  border-radius: 5px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  border-radius: 5px;
+  height: 2.5rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 20px, rgba(0, 0, 0, 0.8);
+}
+
+.results--list {
+  background-color: lightblue;
+  overflow: auto;
+}
+.results--list__item {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  font-size: 2rem;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+.img {
+  max-width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+.anime-link {
+  color: #eee;
+  text-decoration: none;
+}
